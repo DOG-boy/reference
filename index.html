@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实验</title>
+	<style>
+	body{
+		
+		background-size: cover;
+		background-image: url("image/backone.jpg");
+		background-repeat: no-repeat;
+
+	}
+	.text{
+		font-size: 45px;		
+		height: 45px;
+		width: 270px;
+		color:white;
+		left: 38%;
+		top: 230px;
+		animation:moveone ;
+		
+		-moz-animation: moveone 2s ;	/* Firefox */
+		-webkit-animation: moveone 2s ;	/* Safari 和 Chrome */
+		-o-animation: move 2s;	/* Opera */
+		position: relative;
+	}
+	a{
+		font-size: 23px;
+		display: block;
+		color: white;
+		text-decoration: none;
+		margin-top:  50px ;
+		margin-left: 70px;
+
+		animation:isshow ;
+		-moz-animation: isshow 2s ;	/* Firefox */
+		-webkit-animation: isshow 2s ;	/* Safari 和 Chrome */
+		-o-animation: isshow 2s;	/* Opera */
+
+		transition:font-size 1s;
+		-moz-transition:font-size 1s; /* Firefox 4 */
+		-webkit-transition:font-size 1s; /* Safari and Chrome */
+		-o-transition:font-size 1s; /* Opera */
+		visibility:visible;
+	}
+	a:hover{
+		
+		font-size: 25px;
+	}
+	@keyframes moveone
+{
+		0%   {top:0px;}	
+		100% {top:230px;}
+}
+
+	@-moz-keyframes moveone /* Firefox */
+		{
+		0%   {top:0px;}	
+		100% {top:230px;}
+		}
+		
+		@-webkit-keyframes moveone /* Safari 和 Chrome */
+		{
+		0%   {top:0px;}	
+		100% {top:230px;}
+		}
+		
+		@-o-keyframes moveone /* Opera */
+		{
+		0%   {top:0px;}	
+		100% {top:230px;}
+		}
+		
+		@keyframes isshow
+{
+		0%   {visibility:hidden;}	
+		100% {visibility:hidden;}
+}
+		
+		@-webkit-keyframes moveone /* Safari 和 Chrome */
+		{
+		0%   {visibility:hidden;}	
+		100% {visibility:hidden;}
+		}
+	</style>
+
+</head>
+
+<body  style="overflow:-Scroll;overflow-y:hidden" > 
+	<div class="body">
+		<div class="text" >
+			COVID-2019
+			<a href="HTMLS\count.html">了解更多 ></a>
+		</div>
+		<div>
+			
+		</div>
+	
+	</div>
+	
+	<script>
+	
+	
+	</script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:myfirst 5s;
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */
+}
+
+@keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+<div></div>
+
+</body>
+</html> -->

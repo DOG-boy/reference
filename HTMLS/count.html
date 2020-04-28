@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>count</title>
+	<style>
+	h3,h1,p,table,tr,td,ul,li{
+		margin:0;
+		padding: 0;
+	}
+	body{
+		background-color: #f4f4f4;
+		margin: 0;
+		padding: 0;
+	}
+	.content{
+		width: 900px;		
+		margin: 0 auto;		
+		background-color: white;
+	}
+	#title{
+		height:50px;
+
+	}
+	#title span{
+		width: 300px;
+		height:49px;
+		float: left;
+		text-align: center;
+		color: black;
+		font-size: 20px;
+		line-height: 49px;
+		background-color:white;
+	}
+	#title .current{
+		color:#00a8f3;
+		border-bottom: 1px solid #00a8f3;
+	}
+	#one div{
+		width: 898px;
+		height:150px;
+		padding-top: 10px;
+		position: relative;
+		margin-top: 10px;
+		box-shadow:  1px 1px 1px 0px #dddddd;
+		margin-bottom: 20px;	
+		text-indent: 10em;		
+		
+	}
+	#one .picone{
+		background: url("../image/11.png") no-repeat;
+		background-repeat: no-repeat;
+		background-size:150px 150px;	
+
+	}
+	#one .pictwo{
+		background: url("../image/33.jpg") no-repeat;
+		background-repeat: no-repeat;
+		background-size:150px 150px;	
+		
+	}
+	#one .picthree{
+		background: url("../image/22.jpg") no-repeat;
+		background-repeat: no-repeat;
+		background-size:150px 150px;	
+		
+	}
+	#one .picfour{
+		background: url("../image/44.png") no-repeat;
+		background-repeat: no-repeat;
+		background-size:150px 150px;	
+		
+	}
+
+	#one div.nomarginbottom{
+		margin-bottom: 0px;
+		background: url("../image/55.png") no-repeat;
+		background-repeat: no-repeat;
+		background-size:150px 150px;	
+		
+	}
+	.contentbox{
+
+		display: none;
+	}
+	.contentbox.current{
+		display: block;
+	}	
+
+    #one  div h3{
+		display: block;
+		margin-bottom: 8px;
+		font-size: 20px;
+	}
+	#one p{
+		font-size: 15px;
+	}
+	#one div a{
+		right: 0px;
+		display: block;
+		bottom: 8px;
+		position: absolute;
+		font-size: 13px;
+		text-decoration: none;
+		right: 10px;
+		font-size: 13px;
+		color:gray;
+	}
+	#one div a:hover{
+		color:#00a8f3;
+	}
+	#two{
+		margin-top: 10px;
+	}
+	#two div{
+		width: 900px;
+		height: 610px;
+		padding-top: 10px;
+		position: relative;
+		padding-left: 70px;
+	}
+	#two li{
+		width: 85%;
+		height:50px;
+		font-size: 17px;
+		line-height: 50px;
+		list-style: none;
+		display: block;
+	}
+	#two span{
+		color:#cccecf;
+		margin-right: 10px;
+	}
+	#two span.one{
+		color:#f13f64;
+	}
+	#two span.two{
+		color:#ff6a25;
+	}
+	#two span.three{
+		color:#faa90e;
+	}
+
+
+
+	#three{
+		margin-top: 10px;
+	}
+	#three p{
+		color:gray;
+		margin-bottom: 5px;
+	}
+	#three div{
+		width:900px;		
+	}
+	#three table{
+		border-spacing: 0px 0px;
+	}
+	#three td{
+		width: 180px;
+		border: none;
+		height:30px;
+		font-size: 15px;
+		vertical-align: middle;
+		text-align:center;
+
+	}
+	#three th{
+		line-height:30px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.region{
+		background-color: #e3e7f3;
+	}
+	.now{
+		background-color:#f3bab0;
+	}
+	.all{
+		background-color:#e69a8d;
+	}
+	.dead{
+		background-color:#b4c0d5;
+	}
+	.cure{
+		background-color:#95db9a;
+	}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div id="title" >
+			<span class="current">认识新冠</span>
+			<span >今日疫情热搜</span>
+			<span>全国疫情分布</span>
+		</div >	
+		<!-- 第一个盒子 -->	
+		<div  class="contentbox current" id="one">
+		 	<div  class="picone">
+				<h3>什么是新冠肺炎？</h3>
+				<p>此次流行的冠状病毒为一种新发现的冠状病毒，国际病毒分类委员会命名为SARS-Cov-2。</p> 
+				<a href="pagetwo.html">点击了解更多</a>
+			</div>
+			<div class="pictwo">
+				<h3>病毒怕什么</h3>
+				<p>新型冠状病毒肺炎（SARS-Cov-2),简称“新冠肺炎”，世界卫生组织命名为“2019冠状病毒病”,<!-- 是指2019新型冠状病毒感染导致的肺炎。 --></p> 
+				<a href="pagethree.html">点击了解更多</a>
+			</div>
+			<div class="picthree">				
+				<h3>帮你排除感染症状</h3>
+				<p>哪些人容易感染新型冠状病毒？什么人容易变成重症？新型冠状病毒致病性如何？</p> 
+				<a href="pageone.html">点击了解更多</a>
+			</div>
+			<div class="picfour">
+				<h3>做好预防免感染</h3>
+				<p>人口不密集的地方可以不带口罩吗？口罩能重复带吗？煮沸后能重复使用吗？</p> 
+				<a href="pagefour.html">点击了解更多</a>
+			</div >
+			<div class="nomarginbottom">
+				<h3>治疗方法早知道</h3>
+				<p>潜伏期能检查出来吗？感染了新型冠状病毒一定会得肺炎吗？新冠肺炎如何治疗？</p> 
+				<a href="pagefive.html">点击了解更多</a>
+			</div> 
+		</div>
+		
+		<!-- 第二个盒子 -->
+		<div   class="contentbox" id="two">
+			<div>
+				<ul>
+					<li><span class="one">1</span>新型肺炎实时动态</li>
+					<li><span class="two">2</span>高危人群不建议五一出行旅游</li>
+					<li><span class="three">3</span>这国成功研发新冠肺炎疫苗奖139万</li>
+					<li><span>4</span>美国首次发现宠物感染新冠</li>
+					<li><span>5</span>深圳首次公布师生感染情况</li>
+					<li><span>6</span>疫情期间减重120斤</li>
+					<li><span>7</span>17地明确禁办婚宴等酒席</li>
+					<li><span>8</span>武汉现有确诊首次降至100例以下</li>
+					<li><span>9</span>20架临时航班接回在外中国公民</li>
+					<li><span>10</span>武汉公共交通恢复</li>		
+					<li><span>11</span>日本一幼儿院8名婴幼儿感染新冠</li>
+					<li><span>12</span>浙江衢州两会见面改行作揖礼</li>
+					
+					
+				</ul>
+			</div>
+		 </div> 
+
+		<!-- 第三个盒子 -->
+		<!-- 全国确诊分布表 -->
+		 <div  class="contentbox" id="three" >
+			<div>
+				<p>数据更新时间为：2020年4月24日</p>
+				<table>
+				<tr>
+						<th class="region">地区</th>
+						<th class="now">现存确诊</th>
+						<th class="all">累计确诊</th>
+						<th class="dead">死亡</th>
+						<th class="cure">治愈</th>					
+					</tr>
+					<tr>
+						<td>黑龙江</td>
+						<td>425</td>
+						<td>925</td>
+						<td>13</td>
+						<td>487</td>
+					</tr>
+					<tr>
+						<td>香港</td>
+						<td>332</td>
+						<td>1035</td>
+						<td>4</td>
+						<td>699</td>
+					</tr>
+					<tr>
+						<td>台湾</td>
+						<td>168</td>
+						<td>427</td>
+						<td>6</td>
+						<td>253</td>
+					</tr>
+					<tr>
+						<td>上海</td>
+						<td>100</td>
+						<td>640</td>
+						<td>7</td>
+						<td>533</td>
+					</tr>
+					<tr>
+						<td>内蒙古</td>
+						<td>85</td>
+						<td>194</td>
+						<td>1</td>
+						<td>108</td>
+					</tr>
+					<tr>
+						<td>湖北</td>
+						<td>69</td>
+						<td>68128</td>
+						<td>4512</td>
+						<td>63547</td>
+					</tr>
+					<tr>
+						<td>北京</td>
+						<td>63</td>
+						<td>593</td>
+						<td>8</td>
+						<td>522</td>
+					</tr>
+					<tr>
+						<td>山西</td>
+						<td>55</td>
+						<td>197</td>
+						<td>0</td>
+						<td>142</td>
+					</tr>
+					<tr>
+						<td>广东</td>
+						<td>49</td>
+						<td>1585</td>
+						<td>8</td>
+						<td>1528</td>
+					</tr>
+					<tr>
+						<td>澳门</td>
+						<td>18</td>
+						<td>45</td>
+						<td>0</td>
+						<td>27</td>
+					</tr>
+					<tr>
+						<td>山东</td>
+						<td>14</td>
+						<td>787</td>
+						<td>7</td>
+						<td>766</td>
+					</tr>
+					<tr>
+						<td>浙江</td>
+						<td>11</td>
+						<td>1268</td>
+						<td>1</td>
+						<td>1256</td>
+					</tr>
+
+					<tr>
+						<td>福建</td>
+						<td>8</td>
+						<td>355</td>
+						<td>1</td>
+						<td>99</td>
+					</tr>
+					<tr>
+						<td>江苏</td>
+						<td>7</td>
+						<td>653</td>
+						<td>0</td>
+						<td>646</td>
+					</tr>
+					<tr>
+						<td>天津</td>
+						<td>7</td>
+						<td>189</td>
+						<td>3</td>
+						<td>179</td>
+					</tr>
+					<tr>
+						<td>河北</td>
+						<td>5</td>
+						<td>328</td>
+						<td>6</td>
+						<td>317</td>
+					</tr>
+					<tr>
+						<td>云南</td>
+						<td>2</td>
+						<td>184</td>
+						<td>2</td>
+						<td>180</td>
+					</tr>
+					<tr>
+						<td>安徽</td>
+						<td>1</td>
+						<td>991</td>
+						<td>6</td>
+						<td>984</td>
+					</tr>
+					<tr>
+						<td>辽宁</td>
+						<td>1</td>
+						<td>146</td>
+						<td>2</td>
+						<td>143</td>
+					</tr>
+					<tr>
+						<td>河南</td>
+						<td>0</td>
+						<td>1276</td>
+						<td>22</td>
+						<td>1245</td>
+					</tr>
+					<tr>
+						<td>湖南</td>
+						<td>0</td>
+						<td>1019</td>
+						<td>4</td>
+						<td>1015</td>
+					</tr>
+					<tr>
+						<td>重庆</td>
+						<td>0</td>
+						<td>597</td>
+						<td>6</td>
+						<td>573</td>
+					</tr>
+					<tr>
+						<td>四川</td>
+						<td>0</td>
+						<td>561</td>
+						<td>3</td>
+						<td>558</td>
+					</tr>
+					<tr>
+						<td>广西</td>
+						<td>0</td>
+						<td>254</td>
+						<td>2</td>
+						<td>252</td>
+					</tr>
+					<tr>
+						<td>青海</td>
+						<td>0</td>
+						<td>18</td>
+						<td>0</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>西藏</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+	<script>
+	var title=document.getElementById("title");
+	var spans=title.getElementsByTagName("span");
+	var contentbox=document.getElementsByClassName("contentbox");
+	let index=0;
+
+	for (let i = 0; i < spans.length; i++) {
+		spans[i].onmouseover=function () {
+			 spans[index].className="";
+			 contentbox[index].className="contentbox";
+			 index=i;
+			 spans[index].className="current";
+			 contentbox[index].className="contentbox current";
+		}		 
+	}
+
+	var second=document.getElementById("two");
+	var lis=second.getElementsByTagName("li");
+	var s= ["https://www.baidu.com/s?word=%E6%96%B0%E5%9E%8B%E8%82%BA%E7%82%8E%E5%AE%9E%E6%97%B6%E5%8A%A8%E6%80%81&sa=osari_hotword_1&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=%E9%AB%98%E5%8D%B1%E4%BA%BA%E7%BE%A4%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BA%94%E4%B8%80%E5%87%BA%E8%A1%8C%E6%97%85%E6%B8%B8&sa=osari_hotword_2&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=%E8%BF%99%E5%9B%BD%E6%88%90%E5%8A%9F%E7%A0%94%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E8%80%85%E5%A5%96139%E4%B8%87&sa=osari_hotword_3&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=%E7%BE%8E%E5%9B%BD%E9%A6%96%E6%AC%A1%E5%8F%91%E7%8E%B0%E5%AE%A0%E7%89%A9%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0&sa=osari_hotword_4&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=%E6%B7%B1%E5%9C%B3%E9%A6%96%E6%AC%A1%E5%85%AC%E5%B8%83%E5%B8%88%E7%94%9F%E6%84%9F%E6%9F%93%E6%83%85%E5%86%B5&sa=osari_hotword_5&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E5%87%8F%E9%87%8D120%E6%96%A4&sa=osari_hotword_6&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=17%E5%9C%B0%E6%98%8E%E7%A1%AE%E7%A6%81%E5%8A%9E%E5%A9%9A%E5%AE%B4%E7%AD%89%E9%85%92%E5%B8%AD&sa=osari_hotword_7&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=%E6%AD%A6%E6%B1%89%E7%8E%B0%E6%9C%89%E7%A1%AE%E8%AF%8A%E9%A6%96%E6%AC%A1%E9%99%8D%E8%87%B3100%E4%BE%8B%E4%BB%A5%E4%B8%8B&sa=osari_hotword_8&mmsuse=sarifrom@osari_pc_1",
+	"https://www.baidu.com/s?word=20%E6%9E%B6%E4%B8%B4%E6%97%B6%E8%88%AA%E7%8F%AD%E6%8E%A5%E5%9B%9E%E5%9C%A8%E5%A4%96%E4%B8%AD%E5%9B%BD%E5%85%AC%E6%B0%91%09&sa=osari_hotword_9&mmsuse=sarifrom@osari_map",
+	"https://www.baidu.com/s?word=%E6%AD%A6%E6%B1%89%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%81%A2%E5%A4%8D&sa=osari_hotword_10&mmsuse=sarifrom@osari_map",
+	"https://www.baidu.com/s?word=%E6%97%A5%E6%9C%AC%E4%B8%80%E5%B9%BC%E5%84%BF%E9%99%A28%E5%90%8D%E5%A9%B4%E5%B9%BC%E5%84%BF%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0&sa=osari_hotword_11&mmsuse=sarifrom@osari_map",
+	"https://www.baidu.com/s?word=%E6%B5%99%E6%B1%9F%E8%A1%A2%E5%B7%9E%E4%B8%A4%E4%BC%9A%E8%A7%81%E9%9D%A2%E6%94%B9%E8%A1%8C%E4%BD%9C%E6%8F%96%E7%A4%BC&sa=osari_hotword_12&mmsuse=sarifrom@osari_map"];
+
+	let note=0;
+	for (let i = 0; i < lis.length; i++) {
+		lis[i].onmouseover=function () {
+			 lis[note].style.backgroundColor="white";
+			 note=i
+			 lis[note].style.backgroundColor="#cccecf";
+			 lis[i].onclick=function(){
+			 	window.location=s[note];
+			 }
+		}		 
+	}
+	
+	
+
+
+	</script>
+</body>
+</html>
